@@ -11,6 +11,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="icon" href="images/iconito.png">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css" preload/>
+    
 </head>
 
 <body>
@@ -55,28 +57,28 @@
         </div>
         <div class="caja-media">
             <div class="caja-chica">
-                <img src="images/icono-html.png">
+                <i class="devicon-html5-plain colored skill-icon"></i>
                 <p>HTML 5</p>
             </div>
             <div class="caja-chica">
-                <img src="images/icono-html.png">
-                <p>HTML 5</p>
+                <i class="devicon-css3-plain colored skill-icon"></i>
+                <p>CSS 3</p>
             </div>
             <div class="caja-chica">
-                <img src="images/icono-html.png">
-                <p>HTML 5</p>
+                <i class="devicon-sass-plain colored skill-icon"></i>
+                <p>SASS</p>
             </div>
             <div class="caja-chica">
-                <img src="images/icono-html.png">
-                <p>HTML 5</p>
+                <i class="devicon-javascript-plain colored skill-icon"></i>
+                <p>JavaScript</p>
             </div>
             <div class="caja-chica">
-                <img src="images/icono-html.png">
-                <p>HTML 5</p>
+                <i class="devicon-react-plain colored skill-icon"></i>
+                <p>React</p>
             </div>
             <div class="caja-chica">
-                <img src="images/icono-html.png">
-                <p>HTML 5</p>
+                <i class="devicon-git-plain colored skill-icon"></i>
+                <p>Git</p>
             </div>
         </div>
     </div>
@@ -86,7 +88,7 @@
 <!------------------------------- SECTION CITA --------------------------------->
     <section class="section-cita">
         <div class="contenedora-cita">
-            <img src="images/icono-cita.jpg">
+            <i class="fas fa-quote-right quote-icon"></i>
             <p class="p-cita">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Officia quo saepe illo consectetur, labore magnam, alias rem dolorum et vitae laboriosam natus obcaecati quis sapiente velit ut, ratione repudiandae distinctio?</p>
             <h2 class="h2-cita">Cita importante</h2>
         </div>
@@ -102,32 +104,32 @@
             </div>
             <div class="caja-media-proy">
                 <div class="caja-chica-proy">
-                    <img src="images/icono-html.png">
-                    <p>HTML 5</p>
+                    <img src="images/proyecto-portfolio.jpg">
+                    <p>Mi Portfolio</p>
                 </div>
                 <div class="caja-chica-proy">
-                    <img src="images/icono-html.png">
-                    <p>HTML 5</p>
+                    <img src="images/generador-memes.svg">
+                    <p>Generador de memes</p>
                 </div>
                 <div class="caja-chica-proy">
-                    <img src="images/icono-html.png">
-                    <p>HTML 5</p>
+                    <img src="images/match-3.svg">
+                    <p>Match 3</p>
                 </div>
                 <div class="caja-chica-proy">
-                    <img src="images/icono-html.png">
-                    <p>HTML 5</p>
+                    <img src="images/controlador-gastos.svg">
+                    <p>Controlador de gastos</p>
                 </div>
                 <div class="caja-chica-proy">
-                    <img src="images/icono-html.png">
-                    <p>HTML 5</p>
+                    <img src="images/reuniones.svg">
+                    <p>Administrador de reuniones</p>
                 </div>
                 <div class="caja-chica-proy">
-                    <img src="images/icono-html.png">
-                    <p>HTML 5</p>
+                    <img src="images/todo-app.svg">
+                    <p>Todo app</p>
                 </div>
                 <div class="caja-chica-proy">
-                    <img src="images/icono-html.png">
-                    <p>HTML 5</p>
+                    <img src="images/buscador-peliculas.svg">
+                    <p>Buscador de películas</p>
                 </div>
             </div>
         </div>
@@ -151,6 +153,30 @@
             <div class="caja-escribime">
                 <h1>Escribime</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, quas nam eius reiciendis quam commodi laudantium. Mollitia similique totam in iusto molestias! Consectetur aut corporis dolorum fugiat, totam nesciunt officia!</p>
+                <form class="formulario">
+                    <div class="nombre-apellido">
+                        <div class="nombre">
+                        <p>Nombre*</p>
+                        <input type="text" name="nombre" maxlength="20" placeholder="por ejemplo Celeste" required="required">
+                        </div>
+                        <div class="apellido">
+                        <p>Apellido*</p>
+                        <input type="text" name="apellido" maxlength="20" required="required">
+                        </div>
+                    </div>
+                    <div class="email">
+                        <p>Email*</p>
+                        <input type="email" name="email" maxlength="20" required="required">
+                    </div>
+                    <div class="caja-mensaje">
+                        <p>Mensaje*</p>
+                        <textarea name="mensaje">
+                            Ingrese su Comentario</textarea>
+                    </div>
+                    <div class="boton-enviar">
+                    <input class="enviar" type="submit" name="enviar" value="Enviar">
+                    </div>
+                </form>
             </div>
         </div>
     </section>
@@ -169,12 +195,12 @@
        </ul>
     </nav> 
 
-    <nav class="footer-redes">
+    <nav class="caja-footer-redes">
        <ul>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>
-        <li><a href=""><i class="fab fa-twitter"></i></a></li>                
+        <li><a href="" class="footer-redes"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="" class="footer-redes"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="" class="footer-redes"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="" class="footer-redes"><i class="fab fa-twitter"></i></a></li>                
         </ul>
     </nav>
 

@@ -52,12 +52,20 @@ li.nav-item{
     margin: 0.5em 0.5em;
 }
 
+.nav-item>a:hover{
+    color: rgb(190, 81, 104);
+}
+
 li.nav-contacto{
     display: inline-block;
     padding: 0.5em 1.2em;
-    background-color: rgb(102, 137, 172);
+    background-color: rgb(190, 81, 104);
     margin: 0 0.5em;
     border-radius: 1em;
+}
+
+li.nav-contacto:hover{
+    background-color: rgb(219, 130, 149);
 }
 
 a.nav-contacto{
@@ -109,7 +117,7 @@ p.hola-soy{
 h2.celeste-cid{
     font-size: 4em;
     font-weight: bolder;
-    color:rgb(102, 137, 172);
+    color:rgb(190, 81, 104);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
 }
@@ -127,13 +135,18 @@ div.boton-lo-que-hago{
 }
 
 a.lo-que-hago{
-    padding: 0.5em 1.2em;
-    background-color: rgb(102, 137, 172);
+    padding: 0.7em 1.2em;
+    background-color: rgb(190, 81, 104);
     margin: 0 0.5em;
     border-radius: 1em;
     color:white;
     font-size: 1em;
 }
+
+a.lo-que-hago:hover{
+    background-color: rgb(219, 130, 149);
+}
+
 /* -------------------------------------- SECTION 1 HOLA SOY ----------------------------------- */
 
 /* ------------------------- SECTION MIS CONOCIMIENTOS / MIS PROYECTOS ------------------------- */
@@ -142,15 +155,6 @@ a.lo-que-hago{
     padding-top: 5em;
     padding-bottom: 5em;
     background-color: rgb(243, 243, 243);
-    display: flex;
-    align-items: center;
-}
-
-.section-cajas-proyectos{
-    width: 100%;
-    padding-top: 5em;
-    padding-bottom: 5em;
-    background-color: white;
     display: flex;
     align-items: center;
 }
@@ -184,16 +188,19 @@ a.lo-que-hago{
 }
 
 .caja-media{
-    min-width: 50%;
+    min-width: 70%;
     display: flex;
-    height: 27em;
+    height: 37em;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding-top: 3em;
+    padding-bottom: 2em;
 }
 
 .caja-chica{
-    min-width: 31%;
-    min-height: 31%;
+    width: 31%;
+    height: 50%;
+    padding: 1em;
     border: solid 1px lightgray;
     border-radius: 1em;
     margin: 1%;
@@ -202,30 +209,54 @@ a.lo-que-hago{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
+    transition: 0.3s;
 }
 
-.caja-chica img{
-    max-width: 40%;
+.caja-chica:hover{
+    border-color: rgb(190, 81, 104);
+}
+
+.caja-chica:hover p{
+    color:rgb(190, 81, 104);
+}
+
+.caja-chica>img{
+    max-width: 20%;
+}
+
+.caja-media>.caja-chica>i{
+    font-size: 7em;
 }
 
 .caja-chica p{
-    font-size: 1.1em;
+    padding-top: 1em;
+    font-size: 1.5em;
     font-weight: bolder;
     color: black;
 }
 
+/*-----proyectos------*/
+.section-cajas-proyectos{
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 7em;
+    background-color: white;
+    align-items: center;
+}
+
 .caja-media-proy{
-    min-width: 50%;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    max-width: 70%;
+    height: 47em;
     display: flex;
-    height: 40em;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 .caja-chica-proy{
-    min-width: 31%;
-    min-height: 31%;
+    width: 31%;
+    height: 35%;
     border: solid 1px lightgray;
     border-radius: 1em;
     margin: 1%;
@@ -234,14 +265,24 @@ a.lo-que-hago{
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: 0.3s;
+}
 
+.caja-chica-proy:hover{
+    border-color: rgb(190, 81, 104);
+}
+
+.caja-chica-proy:hover p{
+    color:rgb(190, 81, 104);
 }
 
 .caja-chica-proy img{
-    max-width: 40%;
+    max-width: 80%;
+    max-height: 45%;
 }
 
 .caja-chica-proy p{
+    padding-top: 2em;
     font-size: 1.1em;
     font-weight: bolder;
     color: black;
@@ -255,7 +296,7 @@ a.lo-que-hago{
     padding-bottom: 5em;
     display: flex;
     flex-wrap: nowrap;
-    background-color: rgb(102, 137, 172);
+    background-color: rgb(190, 81, 104);
     align-items: center;
     justify-content: center;
 }
@@ -265,8 +306,11 @@ a.lo-que-hago{
     text-align: center;
 }
 
-.contenedora-cita img{
-    width: 15%;
+.contenedora-cita>i{
+    max-width: 15%;
+    max-height: 15%;
+    color:white;
+    font-size: 5em;
 }
 
 .contenedora-cita p{
@@ -317,31 +361,15 @@ a.lo-que-hago{
     display: block;
 }
 
-.caja-escribime{
-    max-width: 40%;
-    height: 30em;
-    padding-bottom: 3em;
-    display: block;
-}
-
 .caja-contactame>h1{
     font-size: 2em;
     font-weight: bolder;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.caja-escribime>h1{
-    font-size: 2em;
-    font-weight: bolder;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
+
 
 .caja-contactame>p{
-    padding-top: 1em;
-    padding-bottom: 1em;
-}
-
-.caja-escribime>p{
     padding-top: 1em;
     padding-bottom: 1em;
 }
@@ -356,10 +384,14 @@ a.lo-que-hago{
     padding-bottom: 0.7em;
 }
 
-/*iconito twitter*/
-.redes-contactame .fab{ 
+/*iconito redes*/
+.link-redes>.fab {
+    border-radius: 2em;
+    font-size: 1.3em;
+    margin-right: 0.5em;
     color: rgb(190, 81, 104);
     padding: 0.7em;
+    transition: 0.3s;
 }
 
 /*hoover redes*/
@@ -372,15 +404,103 @@ a.lo-que-hago{
     background-color: rgb(190, 81, 104);
 }
 
-.link-redes>.fab {
-    padding: 0.5em;
-    border-radius: 2em;
-    font-size: 1.3em;
-    margin-right: 0.5em;
+/*---- Escribime ----*/
+
+.caja-escribime{
+    max-width: 40%;
+    height: 30em;
+    padding-bottom: 3em;
+    display: flex;
+    flex-direction: column;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+}
 
+.nombre>input .apellido>input{
+    width: 30%;
+}
 
+.nombre-apellido{
+    display: flex;
+    flex-direction: row;
+}
+
+.nombre{
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.apellido{
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.email{
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.email>input{
+    width: 100%;
+}
+
+.caja-mensaje{
+    padding-right: 1em;
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.caja-escribime>h1{
+    font-size: 2em;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.caja-escribime>p{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.nombre-apellido{
+    display: flex;
+}
+
+.boton-enviar{
+    padding-left: 1em;
+    padding-top: 1em;
+}
+
+.enviar{
+    width: 30%;
+    padding: 0.5em;
+    align-self: left;
+    border-radius: 1em;
+    background-color: rgb(190, 81, 104);
+    color: white;
+    border-style: solid;
+    border-color: white;
+}
+
+input{
+    font-size: 1em;
+    border: none;
+    border-radius: 1em;
+    height: 2em;
+    background-color: rgb(243, 243, 243);
+}
+
+textarea{
+    font-size: 1em;
+    border: none;
+    border-radius: 1em;
+    height: 2em;
+    background-color: rgb(243, 243, 243);
+}
 
 
 /* --------------------------------------- SECTION FORMULARIO ---------------------------------- */
@@ -413,22 +533,41 @@ footer{
     font-size: 1em;
 }
 
-.footer-redes ul{
+.caja-footer-redes ul{
     width: 100%;
     text-align: center;
-    align-items: center;
-    margin-top: 3%;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
-.footer-redes ul li{
-    font-size: 1.2em;
-    display: inline;
+.caja-footer-redes li{
+    display: inline-block;
     margin: 0% 0.5%;
 }
 
-.footer-redes ul li a{
-    padding: 0.8% 1%;
+/*iconito redes*/
+.footer-redes>.fab {
+    border-radius: 50%;
+    font-size: 1.3em;
+    color: rgb(190, 81, 104);
+    background-color: white;
+    padding: 0.5em;
+    transition: 0.3s;
+    text-decoration: none;
+    border-style: solid;
+    border-color: white;
+    border-width: 0.01px;
+
+}
+
+/*hoover iconito redes*/
+.footer-redes:hover .fab {
     color: white;
+    background-color: rgb(190, 81, 104);
+    border-style: solid;
+    border-color: white;
+    border-width: 0.01px;
+
 }
 
 footer>p{
@@ -436,7 +575,7 @@ footer>p{
     font-size: 1em;
     align-items: center;
     text-align: center;
-    margin-top: 4%;
+    padding-top: 1em;
 }
 
 /* ----------------------------------------- SECTION FOOTER ------------------------------------ */
