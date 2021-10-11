@@ -383,6 +383,22 @@ a.lo-que-hago:hover{
     padding-bottom: 0.7em;
 }
 
+input:focus{
+    box-shadow: 0px 0px 10px rgb(190, 81, 104);
+    transition: 0.2s;
+    outline: none;
+}
+
+textarea:focus{
+    box-shadow: 0px 0px 7px rgb(190, 81, 104);
+    transition: 0.2s;
+    outline: none;
+}
+
+label{
+    font-weight: bold;
+}
+
 /*iconito redes*/
 .link-redes>.fab {
     border-radius: 2em;
